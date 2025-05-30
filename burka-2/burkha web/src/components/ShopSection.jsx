@@ -7,7 +7,7 @@
 // const [courses, setCourses] = useState([]);
 //   const [filterText, setFilterText] = useState('');
 
-//   const api = 'http://localhost:8080/product';
+//   const api = 'https://backend-20ar.onrender.com/product';
 
 //   useEffect(() => {
 //     const fetchCourses = async () => {
@@ -933,7 +933,7 @@
 
 
 
-//   const api = 'http://localhost:8080/product';
+//   const api = 'https://backend-20ar.onrender.com/product';
 
 
 
@@ -1780,13 +1780,13 @@
 //     };
 //   };
 
-//   const api = 'http://localhost:8080/product';
+//   const api = 'https://backend-20ar.onrender.com/product';
 
   
 //  useEffect(() => {
 //     const fetchCategories = async () => {
 //       try {
-//         const res = await axios.get('http://localhost:8080/category');
+//         const res = await axios.get('https://backend-20ar.onrender.com/category');
 //         setCategories(res.data);
 //       } catch (error) {
 //         toast.error('Error fetching categories');
@@ -2642,12 +2642,12 @@
 //     };
 //   };
 
-//   const api = 'http://localhost:8080/product';
+//   const api = 'https://backend-20ar.onrender.com/product';
 
 //   useEffect(() => {
 //     const fetchCategories = async () => {
 //       try {
-//         const res = await axios.get('http://localhost:8080/category');
+//         const res = await axios.get('https://backend-20ar.onrender.com/category');
 //         setCategories(res.data);
 //       } catch (error) {
 //         toast.error('Error fetching categories');
@@ -3418,12 +3418,12 @@ const ShopSection = () => {
     };
   };
 
-  const api = 'http://localhost:8080/product';
+  const api = 'https://backend-20ar.onrender.com/product';
 
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await axios.get('http://localhost:8080/category');
+        const res = await axios.get('https://backend-20ar.onrender.com/category');
         setCategories(res.data);
       } catch (error) {
         toast.error('Error fetching categories');

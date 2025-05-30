@@ -14,7 +14,7 @@
 
 
 
-//     const api = 'http://localhost:8080/product';
+//     const api = 'https://backend-20ar.onrender.com/product';
 
 //     useEffect(() => {
 //         const fetchCourses = async () => {
@@ -211,7 +211,7 @@ const NewArrivalOne = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
-    const api = 'http://localhost:8080/product';
+    const api = 'https://backend-20ar.onrender.com/product';
 
     useEffect(() => {
         const fetchCourses = async () => {
@@ -415,7 +415,7 @@ export default NewArrivalOne;
 //     const [courses, setCourses] = useState([]);
 //     const [filterText, setFilterText] = useState('');
 
-//     const api = 'http://localhost:8080/product';
+//     const api = 'https://backend-20ar.onrender.com/product';
 
 //     useEffect(() => {
 //         const fetchCourses = async () => {

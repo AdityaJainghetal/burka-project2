@@ -396,7 +396,7 @@ const Checkout = () => {
       order_id: data.id,
       handler: async (response) => {
         try {
-          const verifyURL = "http://localhost:8080/paymentuser/verify"; // Adjust port
+          const verifyURL = "https://backend-20ar.onrender.com/paymentuser/verify"; // Adjust port
           const verifyPayload = {
             razorpay_order_id: response.razorpay_order_id,
             razorpay_payment_id: response.razorpay_payment_id,
@@ -457,7 +457,7 @@ const Checkout = () => {
 
     try {
       setIsLoading(true);
-      const orderURL = "http://localhost:8080/paymentuser/orders"; // Adjust port
+      const orderURL = "https://backend-20ar.onrender.com/paymentuser/orders"; // Adjust port
 
       const userDataStr = localStorage.getItem("user");
       const userId = userDataStr ? JSON.parse(userDataStr).user?._id : "guest";

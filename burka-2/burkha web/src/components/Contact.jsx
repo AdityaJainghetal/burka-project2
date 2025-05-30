@@ -246,7 +246,7 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      const response = await axios.post("http://localhost:8080/contact/add", formData);
+      const response = await axios.post("https://backend-20ar.onrender.com/contact/add", formData);
       setSubmitStatus({
         success: true,
         message: "Your message has been sent successfully!"

@@ -41,7 +41,7 @@
 //     }),
 //     onSubmit: async (values) => {
 //       try {
-//        const response = await axios.post("http://localhost:8080/user/register", values);
+//        const response = await axios.post("https://backend-20ar.onrender.com/user/register", values);
 
 
 //         console.log("Registration successful:", response.data);
@@ -353,7 +353,7 @@ const Registration = () => {
     }),
     onSubmit: async (values) => {
       try {
-        const response = await axios.post("http://localhost:8080/auth/register", values);
+        const response = await axios.post("https://backend-20ar.onrender.com/auth/register", values);
         console.log("Registration successful:", response.data);
         toast.success("Registration successful!");
         formik.resetForm();

@@ -15,7 +15,7 @@
 //         const fetchProduct = async () => {
 //             try {
 //                 setLoading(true);
-//                 const response = await axios.get(`http://localhost:8080/product/${id}`);
+//                 const response = await axios.get(`https://backend-20ar.onrender.com/product/${id}`);
 //                 setProduct(response.data);
 //                 setLoading(false);
 //             } catch (err) {
@@ -711,7 +711,7 @@
 //         const fetchProduct = async () => {
 //             try {
 //                 setLoading(true);
-//                 const response = await axios.get(`http://localhost:8080/product/${id}`);
+//                 const response = await axios.get(`https://backend-20ar.onrender.com/product/${id}`);
 //                 setProduct(response.data);
 //                 setLoading(false);
 //             } catch (err) {
@@ -1030,7 +1030,7 @@ const ProductDetailsOne = () => {
         const fetchProduct = async () => {
             try {
                 setLoading(true);
-                const response = await axios.get(`http://localhost:8080/product/${id}`);
+                const response = await axios.get(`https://backend-20ar.onrender.com/product/${id}`);
                 setProduct(response.data);
                 setLoading(false);
             } catch (err) {

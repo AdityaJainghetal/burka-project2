@@ -7,7 +7,7 @@
 //   const [courses, setCourses] = useState([]);
 //   const [filterText, setFilterText] = useState('');
 
-//   const api = 'http://localhost:8080/product';
+//   const api = 'https://backend-20ar.onrender.com/product';
 
 //   useEffect(() => {
 //     const fetchCourses = async () => {
@@ -224,7 +224,7 @@
 //   const [courses, setCourses] = useState([]);
 //   const [filterText, setFilterText] = useState('');
 
-//   const api = 'http://localhost:8080/product';
+//   const api = 'https://backend-20ar.onrender.com/product';
 
 //   useEffect(() => {
 //     const fetchCourses = async () => {
@@ -245,11 +245,11 @@
 //       setLoading(true);
 
 //       const [categoryRes, subCategoryRes, productRes] = await Promise.all([
-//         axios.get("http://localhost:8080/category"),
-//         axios.get("http://localhost:8080/category/:id"),
+//         axios.get("https://backend-20ar.onrender.com/category"),
+//         axios.get("https://backend-20ar.onrender.com/category/:id"),
 
-//         axios.get("http://localhost:8080/subcategory"),
-//         axios.get("http://localhost:8080/product/allproduct"),
+//         axios.get("https://backend-20ar.onrender.com/subcategory"),
+//         axios.get("https://backend-20ar.onrender.com/product/allproduct"),
 //       ]);
 
 //       setCategories(categoryRes.data);
@@ -469,7 +469,7 @@
 //   const [activeCategory, setActiveCategory] = useState('All');
 
 //   const navigate = useNavigate()
-//   const api = 'http://localhost:8080/product';
+//   const api = 'https://backend-20ar.onrender.com/product';
 
 //   useEffect(() => {
 //     const fetchCourses = async () => {
@@ -497,7 +497,7 @@
 //   useEffect(() => {
 //     const fetchCategories = async () => {
 //       try {
-//         const res = await axios.get('http://localhost:8080/category');
+//         const res = await axios.get('https://backend-20ar.onrender.com/category');
 //         setCategories(res.data);
 //       } catch (error) {
 //         toast.error('Error fetching categories');
@@ -642,7 +642,7 @@ const RecommendedOne = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const api = 'http://localhost:8080/product';
+  const api = 'https://backend-20ar.onrender.com/product';
 
   useEffect(() => {
     const fetchCourses = async () => {
@@ -665,7 +665,7 @@ const RecommendedOne = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await axios.get('http://localhost:8080/category');
+        const res = await axios.get('https://backend-20ar.onrender.com/category');
         setCategories(res.data);
       } catch (error) {
         toast.error('Error fetching categories');

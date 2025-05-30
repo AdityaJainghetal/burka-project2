@@ -3,24 +3,16 @@ import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import { getCountdown } from '../helper/Countdown';
 import { useParams } from 'react-router-dom';
+import axios from 'axios';
+
 const ProductDetailsTwo = ({courseId}) => {
 
     const { id } = useParams();
    const [product, setProduct] = useState([]);
+   const [courses, setCourse] = useState([]);
+
    const [loading, setLoading] = useState([]);
-   const [error, setError] = useState("");
-
-
-
-
-
-
-
-
-    
-
-
-    
+   const [error, setError] = useState("");    
 
    useEffect(() => {
     if (courseId) {
@@ -35,7 +27,7 @@ const ProductDetailsTwo = ({courseId}) => {
     const fetchProduct = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`http://localhost:8080/product/${id}`);
+        const res = await axios.get(`https://backend-20ar.onrender.com/product/${id}`);
         console.log(res)
         setProduct(res.data);
       } catch (err) {

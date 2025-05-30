@@ -24,9 +24,9 @@
 //       setLoading(true);
 
 //       const [categoryRes, subCategoryRes, productRes] = await Promise.all([
-//         axios.get("http://localhost:8080/category"),
-//         axios.get("http://localhost:8080/subcategory"),
-//         axios.get("http://localhost:8080/product/allproduct"),
+//         axios.get("https://backend-20ar.onrender.com/category"),
+//         axios.get("https://backend-20ar.onrender.com/subcategory"),
+//         axios.get("https://backend-20ar.onrender.com/product/allproduct"),
 //       ]);
 
 //       setCategories(categoryRes.data);
@@ -983,9 +983,9 @@
 //       setLoading(true);
 
 //       const [categoryRes, subCategoryRes, productRes] = await Promise.all([
-//         axios.get("http://localhost:8080/category"),
-//         axios.get("http://localhost:8080//subcategory"),
-//         axios.get("http://localhost:8080/product"),
+//         axios.get("https://backend-20ar.onrender.com/category"),
+//         axios.get("https://backend-20ar.onrender.com//subcategory"),
+//         axios.get("https://backend-20ar.onrender.com/product"),
 //       ]);
 
 //       setCategories(categoryRes.data);
@@ -1941,9 +1941,9 @@
 //     try {
 //       setLoading(true);
 //       const [categoryRes, subCategoryRes, productRes] = await Promise.all([
-//         axios.get("http://localhost:8080/category"),
-//         axios.get("http://localhost:8080/subcategory"),
-//         axios.get("http://localhost:8080/product"),
+//         axios.get("https://backend-20ar.onrender.com/category"),
+//         axios.get("https://backend-20ar.onrender.com/subcategory"),
+//         axios.get("https://backend-20ar.onrender.com/product"),
 //       ]);
 
 //       setCategories(categoryRes.data);
@@ -1990,7 +1990,7 @@
 //       if (category) queryParams.append("category", category);
 
 //       const response = await axios.get(
-//         `http://localhost:8080/product?${queryParams.toString()}`
+//         `https://backend-20ar.onrender.com/product?${queryParams.toString()}`
 //       );
 
 //       const formattedResults = response.data.map((product) => ({
@@ -2803,9 +2803,9 @@ const HeaderOne = () => {
       setLoading(true);
 
       const [categoryRes, subCategoryRes, productRes] = await Promise.all([
-        axios.get("http://localhost:8080/category"),
-        axios.get("http://localhost:8080/subcategory"),
-        axios.get("http://localhost:8080/product"),
+        axios.get("https://backend-20ar.onrender.com/category"),
+        axios.get("https://backend-20ar.onrender.com/subcategory"),
+        axios.get("https://backend-20ar.onrender.com/product"),
       ]);
 
       setCategories(categoryRes.data);
