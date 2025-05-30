@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import apiClient from '../../api/apiClient'; // Replace with your API client path
+import apiClient from '../../api/apiClient.js'; // Replace with your API client path
 
 // Create a new address
 export const addAddress = createAsyncThunk(
